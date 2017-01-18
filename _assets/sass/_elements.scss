@@ -1,0 +1,474 @@
+// Opinião
+.highlight-opiniao {
+	h4{
+		color: $blue;
+		font-family: "Times", "Georgia", sans-serif;
+		font-size: 32px;
+		font-style: italic;
+		font-weight: normal;
+		margin: 0 0 10px;
+	}
+
+	cite{
+		color: $default;
+		display: block;
+		font-family: $oswald;
+		font-size: 20px;
+		font-style: normal;
+		line-height: 30px;
+		padding-left: 30px;
+		position: relative;
+		margin-bottom: 20px;
+		&:before{
+			background: url("../images/icons/icon-quote-blue.svg") no-repeat center;
+			background-size: 100%;
+			content: " ";
+			display: block;
+			left: 0;
+			position: absolute;
+			height: 30px;
+			top: 0;
+			width: 20px;
+		}
+	}
+
+	a{
+		background: $blue;
+		border-radius: 4px;
+		color: #fff;
+		display: block;
+		font-size: 13px;
+		line-height: 16px;
+		padding: 14px 90px 14px 25px;
+		position: relative;
+		img{
+			border-radius: 50%;
+			position: absolute;
+			right: 20px;
+			bottom: 15px;
+		}
+		&:hover{
+			background: $green-2;
+		}
+	}
+	@media (max-width: 480px) {
+		margin: 0 0 50px;
+	}
+}
+
+// Paraná Informa
+.parana-informa {
+	padding: 0 0 80px;
+	.adv-title{
+		color: $green-1;
+		font-family: $oswald;
+		font-size: 13px;
+		margin: 0 0 30px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+.sidebar-parana-informa{
+	
+	.parana-informa {
+		padding: 0 0 40px;
+		.adv-title{
+			margin-bottom: 20px;
+			text-align: left;
+		}
+	
+		div{
+			float: none;
+			padding: 0;
+			width: 100%;
+			margin: 0;
+		}
+
+		.col-sm-4{
+			background: $bg-1;
+			border-radius: 3px;
+			margin-bottom: 15px;
+			overflow: hidden;
+			padding: 5px;
+			.adv-icon-text {			
+				dd {
+					font-size: 13px;
+					line-height: 20px;
+				}
+			}
+		}
+
+		@media (max-width: 768px){
+			.col-sm-4{
+				.adv-icon-text{
+					margin-bottom: 0;
+				}
+			}
+		}
+
+	}
+}
+
+// Destaque Agenda
+.highlight-agenda{
+	border-radius: 4px;
+	border: 1px solid #e6e6e6;
+	padding: 20px 5px 10px;
+	position: relative;
+	h4{
+		color: $blue;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 18px;
+		margin: 0 0 10px;
+		padding: 0 0 0 10px;
+		position: relative;
+		text-transform: uppercase;
+		&:before{
+			background: $blue;
+			content: "";
+			display: block;
+			height: 15px;
+			left: -5px;
+			position: absolute;
+			width: 5px;
+		}
+		a{
+			color: #acacac;
+			display: inline-block;
+			font-size: 11px;
+			font-weight: normal;
+			margin-left: 15px;
+			position: relative;
+			top: -3px;
+			text-transform: none;
+			i{
+				margin-right: 5px;
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	.owl-carousel-agenda{
+		.item{
+			border-radius: 5px;
+			overflow: hidden;
+			dl{
+				margin: 0 1px;
+				float: left;
+				width: 140px;
+				dt{
+					background:$blue;
+					color: #fff;
+					font-size: 12px;
+					font-weight: normal;
+					line-height: normal;
+					padding: 0 10px;
+					height: 25px;
+					line-height: 25px;
+					text-transform: uppercase;
+				}
+				dd{
+					background: $bg-1;
+					font-size: 14px;
+					padding: 20px 10px;
+					text-align: center;
+					time{
+						display: block;
+						margin-bottom: 10px;
+						span{
+							display: block;
+							line-height: normal;
+							text-transform: uppercase;
+							&.day{
+								color: $blue;
+								font-size: 32px;
+								font-weight: bold;
+							}
+							&.week{
+								color: #a6a6a6;
+								font-size: 12px;
+							}
+						}
+					}
+					strong{
+						display: block;
+						line-height: 18px;
+					}
+					em{
+						display: block;
+						font-style: normal;
+					}
+				}
+			}
+		}
+	}
+
+	nav{
+		left: 0;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		button{
+			background: $blue;
+			border-radius: 50%;
+			border: none;
+			color: #fff;
+			font-size: 14px;
+			line-height: 30px;
+			height: 30px;
+			padding: 2px 0 0 2px;
+			position: absolute;
+			text-align: center;
+			width: 30px;
+			z-index: 101;
+			&.owl-carousel-agenda-next{
+				right: -10px;
+			}
+		}
+	}
+}
+
+// Destaque Programas de Áudio
+.widget-highlight-sidebar{
+	border-radius: 3px;
+	border: 1px solid #bdbdbd;
+	margin: 40px 0;
+	overflow: hidden;
+	dt{
+		img{
+			width: 100%;
+		}
+	}
+	dd{
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style: none;
+				margin: 0;
+				padding: 0 20px;
+				h3{
+					border-top: 1px dotted #bdbdbd;
+					font-size: 13px;
+					font-weight: bold;
+					margin: 0;
+					padding: 20px 0 20px 30px;
+					position: relative;
+					i{
+						color: $blue;
+						position: absolute;
+						left: 0;
+						top: 20px;
+						font-size: 16px;
+					}
+					a{
+						color: $default;
+						&:hover{
+							color: $blue;
+						}
+					}
+				}
+				&:first-child{
+					h3{
+						border: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Destaque Mais Lidos
+.widget-most-rated{
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 40px;
+	dt{
+		font-size: 14px;
+		line-height: normal;
+		margin: 0 0 0 -15px;
+		padding: 0 0 0 30px;
+		position: relative;
+		text-transform: uppercase;
+		&:after{
+			background: $blue;
+			content: "";
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 5px;
+		}
+	}
+	dd{
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style: none;
+				margin: 0;
+				padding: 0 0 0 48px;
+				position: relative;
+				&:before {
+					color: $green-2;
+					content: attr(data-number)".";
+					display: block;
+					font-family: $oswald;
+					font-size: 30px;
+					left: 0;
+					position: absolute;
+					text-align: center;
+					top: 18px;
+					width: 38px;
+					z-index: 1;
+				}
+				&:after {
+					background: $bg-1;
+					border-radius: 50%;
+					content: "";
+					display: block;
+					height: 30px;
+					left: 0;
+					position: absolute;
+					top: 20px;
+					width: 30px;
+				}
+				a{
+					border-top: 1px solid #dcdcdc;
+					color: $default;
+					display: block;
+					font-size: 14px;
+					font-weight: bold;
+					line-height: normal;
+					min-height: 30px;
+					padding: 20px 0;
+					i{
+						color: $blue
+					}
+					&:hover{
+						color: $blue
+					}
+				}
+				&:first-child a{
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+// Botão de Notificações
+.button-news-notification{
+	background: #fff;
+	border: 1px solid #dbdbdb;
+	border-bottom-width: 3px;
+	border-radius: 5px;
+	color: $default;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 10px 15px;
+	text-align: center;
+	margin: 0 auto;
+	i{
+		color: $blue;
+		transform: scale(2);
+		transition: all 0.3s;
+		margin-right: 10px;
+		&:before {
+			position: relative;
+			top: 1px;
+		}
+	}
+	&:hover{
+		background: $blue;
+		color: #fff;
+		i{
+			color: #fff;	
+		}
+	}
+	@media (max-width: 768px) {
+		padding: 15px 30px;
+	}
+}
+
+// Carregamento
+.load-more{
+	padding-top: 40px;
+	text-align: center;
+	.icon-loading{
+		.hourglass{
+			animation: hourglass 2s linear infinite;
+			box-shadow:
+				inset #f5f9fa 0 0 0 0,
+				inset $green-1 0 1em 0 0,
+				inset #f5f9fa 0 0 2em 0;
+			display:block;
+			width: 1em;
+			margin: 0 auto 10px;
+		}
+		.outer{
+			fill:$green-1;
+		}
+		.middle{
+			fill:#f5f9fa;
+		}
+		span{
+			color: #ccc;
+			display: block;
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+	}
+	.button-load-more{
+		background: transparent;
+		border-radius: 3px;
+		border: 1px solid $green-1;
+		color: $green-1;
+		display: inline-block;
+		font-size: 16px;
+		padding: 10px 25px;
+		&:hover{
+			background: $bg-1;
+			border-color: #dfe2c9;
+		}
+	}
+	p{
+		margin: 30px 0 40px;
+	}
+	@media (max-width: 768px) {
+		padding-bottom: 60px;
+	}
+}
+
+@keyframes hourglass{
+	0%{
+		transform:rotate(0deg);
+		box-shadow:
+				inset #f5f9fa 0 0 0 0,
+				inset $green-1 0 1em 0 0,
+				inset #f5f9fa 0 2em 0 0,
+				inset $green-1 0 2em 0 0;
+	}
+	80%{
+		transform:rotate(0deg);
+		box-shadow:
+			inset #f5f9fa 0 1em 0 0,
+			inset $green-1 0 1em 0 0,
+			inset #f5f9fa 0 1em 0 0,
+			inset $green-1 0 2em 0 0;
+	}
+	100%{
+		transform:rotate(180deg);
+		box-shadow:
+			inset #f5f9fa 0 1em 0 0,
+			inset $green-1 0 1em 0 0,
+			inset #f5f9fa 0 1em 0 0,
+			inset $green-1 0 2em 0 0;
+	}
+}
